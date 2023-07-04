@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Celsius</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <h1 class = "topheading"style = "text-align: center;">Temparature Converter</h1>
+    <div class="container">
+        <div class="caluclator">
+            <form action="">
+                <div class = "display">
+                    <input type="text" id="result" value="" name = "display" style=" width:400px;background-image: linear-gradient(lightblue,lightblue); border: solid 5px black; color: #000; font-weight: bolder; font-size: xx-large; font-family: 'Lobster', cursive;">
+                </div>
+                <div><!--Celcius to foarein heat-->
+                    <input type="button" value = "1" id = "pressed" onclick = "display.value+='1'">
+                    <input type="button" value = "2"  id = "pressed" onclick = "display.value+='2'">    
+                    <input type="button" value = "3"  id = "pressed" onclick = "display.value+='3'">
+                    <input type="button" value = "°C->°F" id = "press1" onclick = "swapping1() ">
+                </div>
+                <div><!--Celcius to kelvin heat-->
+                     <input type="button" value = "4" id = "pressed" onclick = "display.value+='4'">
+                     <input type="button" value = "5" id = "pressed" onclick = "display.value+='5'">
+                    <input type="button" value = "6" id = "pressed" onclick = "display.value+='6'">
+                    <input type="button"  value = "°C->°K"  id = "press2"  onclick = "swapping2()">
+                    <!-- <button type = "input" value="kelvin"onclick = "kelvin()" >K</button> -->
+                </div>
+                <div><!--Celcius to kelvin heat-->
+                    <input type="button" value = "7" id = "pressed" onclick = "display.value+='7'">
+                    <input type="button" value = "8" id = "pressed" onclick = "display.value+='8'">
+                    <input type="button" value = "9" id = "pressed" onclick = "display.value+='9'">
+                    <input type="button" value = "0" id = "pressed" onclick = "display.value+='0'">
+                    <input type="button" value = "00" id = "pressed" onclick = "display.value+='00'">
+
+                </div>
+                <div>
+                    <input type="reset" value = "swap"  id = "pressing" onclick = "myfunction()">
+                    <input type="button" value = "Reset"  id = "pressing" onclick = "display.value =''">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="temp.js" ></script>
+</body>
+</html> 
+
+  
